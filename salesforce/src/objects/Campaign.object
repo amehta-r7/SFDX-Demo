@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Campaign_Record_Page4</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <compactLayoutAssignment>MarketingOps</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>MarketingOps</fullName>
+        <fields>Name</fields>
+        <fields>AssetName__c</fields>
+        <fields>Type</fields>
+        <fields>ProductFamily__c</fields>
+        <fields>FunnelStage__c</fields>
+        <fields>CampaignMessage__c</fields>
+        <fields>AudienceSegment__c</fields>
+        <label>Marketing Ops</label>
+    </compactLayouts>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <fields>
+        <fullName>ActualCost</fullName>
+    </fields>
+    <fields>
+        <fullName>AmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>AmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>AssetName__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the asset being promoted in this campaign</inlineHelpText>
+        <label>Asset Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AudienceSegment__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What account segment is being targeted by this campaign?</inlineHelpText>
+        <label>Audience Segment</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mid-Market</fullName>
+                    <default>false</default>
+                    <label>Mid-Market</label>
+                </value>
+                <value>
+                    <fullName>Enterprise</fullName>
+                    <default>false</default>
+                    <label>Enterprise</label>
+                </value>
+                <value>
+                    <fullName>Named</fullName>
+                    <default>false</default>
+                    <label>Named</label>
+                </value>
+                <value>
+                    <fullName>SLED</fullName>
+                    <default>false</default>
+                    <label>SLED</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Author__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the person who authored or contributed to the content</inlineHelpText>
+        <label>Author</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Authors</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BudgetedCost</fullName>
+    </fields>
+    <fields>
+        <fullName>CampaignMemberRecordTypeId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CampaignMessage__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The content theme or messaging this campaign aligns to</inlineHelpText>
+        <label>Campaign Message</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Effectiveness - Time to Value</fullName>
+                    <default>false</default>
+                    <label>Effectiveness - Time to Value</label>
+                </value>
+                <value>
+                    <fullName>Effectiveness - Risk</fullName>
+                    <default>false</default>
+                    <label>Effectiveness - Risk</label>
+                </value>
+                <value>
+                    <fullName>Effectiveness - Displacement</fullName>
+                    <default>false</default>
+                    <label>Effectiveness - Displacement</label>
+                </value>
+                <value>
+                    <fullName>Effectiveness - Other</fullName>
+                    <default>false</default>
+                    <label>Effectiveness - Other</label>
+                </value>
+                <value>
+                    <fullName>Cloud - Getting Started</fullName>
+                    <default>false</default>
+                    <label>Cloud - Getting Started</label>
+                </value>
+                <value>
+                    <fullName>Cloud - Cloud Proofing</fullName>
+                    <default>false</default>
+                    <label>Cloud - Cloud Proofing</label>
+                </value>
+                <value>
+                    <fullName>Cloud - Other</fullName>
+                    <default>false</default>
+                    <label>Cloud - Other</label>
+                </value>
+                <value>
+                    <fullName>Research - Building Intelligence</fullName>
+                    <default>false</default>
+                    <label>Research - Building Intelligence</label>
+                </value>
+                <value>
+                    <fullName>Research - Other</fullName>
+                    <default>false</default>
+                    <label>Research - Other</label>
+                </value>
+                <value>
+                    <fullName>24x7 SOC-as-a-Service</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>24x7 SOC-as-a-Service</label>
+                </value>
+                <value>
+                    <fullName>Build holistic VM program</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Build holistic VM program</label>
+                </value>
+                <value>
+                    <fullName>Collaborate on Risk</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Collaborate on Risk</label>
+                </value>
+                <value>
+                    <fullName>Cross-Sell - Install Base</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Cross-Sell - Install Base</label>
+                </value>
+                <value>
+                    <fullName>Detections/MITRE</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Detections/MITRE</label>
+                </value>
+                <value>
+                    <fullName>Displacement - LogRythym</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Displacement - LogRythym</label>
+                </value>
+                <value>
+                    <fullName>Displacement - Other</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Displacement - Other</label>
+                </value>
+                <value>
+                    <fullName>Displacement - Qualys</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Displacement - Qualys</label>
+                </value>
+                <value>
+                    <fullName>Displacement - Splunk</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Displacement - Splunk</label>
+                </value>
+                <value>
+                    <fullName>Displacement - Tenable</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Displacement - Tenable</label>
+                </value>
+                <value>
+                    <fullName>Improve Maturity</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Improve Maturity</label>
+                </value>
+                <value>
+                    <fullName>MDR Basics</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>MDR Basics</label>
+                </value>
+                <value>
+                    <fullName>Managed DAST</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Managed DAST</label>
+                </value>
+                <value>
+                    <fullName>Modern Coverage/Cloud</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Modern Coverage/Cloud</label>
+                </value>
+                <value>
+                    <fullName>Productivity/Automation/SIEM + SOAR</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Productivity/Automation/SIEM + SOAR</label>
+                </value>
+                <value>
+                    <fullName>Promote Efficiency</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Promote Efficiency</label>
+                </value>
+                <value>
+                    <fullName>Reduce Risk</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Reduce Risk</label>
+                </value>
+                <value>
+                    <fullName>Time To Value</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Time To Value</label>
+                </value>
+                <value>
+                    <fullName>Total Risk Coverage</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Total Risk Coverage</label>
+                </value>
+                <value>
+                    <fullName>Understand Risk</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Understand Risk</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Campaign__c</fullName>
+        <description>Power of One field created for Reporting Purpose.</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Campaign</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CaseSafeID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CaseSafeID - Campaign</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Case Study</fullName>
+                    <default>false</default>
+                    <label>Case Study</label>
+                </value>
+                <value>
+                    <fullName>Downloads</fullName>
+                    <default>false</default>
+                    <label>Downloads</label>
+                </value>
+                <value>
+                    <fullName>Downloads : AppSpider Pro</fullName>
+                    <default>false</default>
+                    <label>Downloads : AppSpider Pro</label>
+                </value>
+                <value>
+                    <fullName>Downloads : Metasploit Community</fullName>
+                    <default>false</default>
+                    <label>Downloads : Metasploit Community</label>
+                </value>
+                <value>
+                    <fullName>Downloads : Metasploitable</fullName>
+                    <default>false</default>
+                    <label>Downloads : Metasploitable</label>
+                </value>
+                <value>
+                    <fullName>Downloads : NeXpose Community</fullName>
+                    <default>false</default>
+                    <label>Downloads : NeXpose Community</label>
+                </value>
+                <value>
+                    <fullName>Downloads : ScanNow</fullName>
+                    <default>false</default>
+                    <label>Downloads : ScanNow</label>
+                </value>
+                <value>
+                    <fullName>Downloads : Trial - UserInsight</fullName>
+                    <default>false</default>
+                    <label>Downloads : Trial - UserInsight</label>
+                </value>
+                <value>
+                    <fullName>Downloads : Trials - Metasploit</fullName>
+                    <default>false</default>
+                    <label>Downloads : Trials - Metasploit</label>
+                </value>
+                <value>
+                    <fullName>Downloads : Trials - Nexpose Enterprise</fullName>
+                    <default>false</default>
+                    <label>Downloads : Trials - Nexpose Enterprise</label>
+                </value>
+                <value>
+                    <fullName>E*Commerce</fullName>
+                    <default>false</default>
+                    <label>E*Commerce</label>
+                </value>
+                <value>
+                    <fullName>Email/Direct Mail Campaigns : Account Based Marketing</fullName>
+                    <default>false</default>
+                    <label>Email/Direct Mail Campaigns : Account Based Marketing</label>
+                </value>
+                <value>
+                    <fullName>Email/Direct Mail Campaigns : Direct Mail</fullName>
+                    <default>false</default>
+                    <label>Email/Direct Mail Campaigns : Direct Mail</label>
+                </value>
+                <value>
+                    <fullName>Email/Direct Mail Campaigns : Email - Outbound</fullName>
+                    <default>false</default>
+                    <label>Email/Direct Mail Campaigns : Email - Outbound</label>
+                </value>
+                <value>
+                    <fullName>Event</fullName>
+                    <default>false</default>
+                    <label>Event</label>
+                </value>
+                <value>
+                    <fullName>Event : CISO Events</fullName>
+                    <default>false</default>
+                    <label>Event : CISO Events</label>
+                </value>
+                <value>
+                    <fullName>Event : Corporate Events</fullName>
+                    <default>false</default>
+                    <label>Event : Corporate Events</label>
+                </value>
+                <value>
+                    <fullName>Event : Field Events</fullName>
+                    <default>false</default>
+                    <label>Event : Field Events</label>
+                </value>
+                <value>
+                    <fullName>Event : Partner Events</fullName>
+                    <default>false</default>
+                    <label>Event : Partner Events</label>
+                </value>
+                <value>
+                    <fullName>Event : Party/Dinner/Cocktails</fullName>
+                    <default>false</default>
+                    <label>Event : Party/Dinner/Cocktails</label>
+                </value>
+                <value>
+                    <fullName>Event : Tradeshow/Seminar</fullName>
+                    <default>false</default>
+                    <label>Event : Tradeshow/Seminar</label>
+                </value>
+                <value>
+                    <fullName>Event : Virtual</fullName>
+                    <default>false</default>
+                    <label>Event : Virtual</label>
+                </value>
+                <value>
+                    <fullName>Existing Customers</fullName>
+                    <default>false</default>
+                    <label>Existing Customers</label>
+                </value>
+                <value>
+                    <fullName>Lists/Sourcing</fullName>
+                    <default>false</default>
+                    <label>Lists/Sourcing</label>
+                </value>
+                <value>
+                    <fullName>Lists/Sourcing : Marketing Sourcing</fullName>
+                    <default>false</default>
+                    <label>Lists/Sourcing : Marketing Sourcing</label>
+                </value>
+                <value>
+                    <fullName>Mobilisafe Online Live Demo</fullName>
+                    <default>false</default>
+                    <label>Mobilisafe Online Live Demo</label>
+                </value>
+                <value>
+                    <fullName>Other Marketing</fullName>
+                    <default>false</default>
+                    <label>Other Marketing</label>
+                </value>
+                <value>
+                    <fullName>Other Marketing : Partner Marketing Program</fullName>
+                    <default>false</default>
+                    <label>Other Marketing : Partner Marketing Program</label>
+                </value>
+                <value>
+                    <fullName>Paid Search</fullName>
+                    <default>false</default>
+                    <label>Paid Search</label>
+                </value>
+                <value>
+                    <fullName>Partner</fullName>
+                    <default>false</default>
+                    <label>Partner</label>
+                </value>
+                <value>
+                    <fullName>Sales Driven</fullName>
+                    <default>false</default>
+                    <label>Sales Driven</label>
+                </value>
+                <value>
+                    <fullName>Webcast/Podcast</fullName>
+                    <default>false</default>
+                    <label>Webcast/Podcast</label>
+                </value>
+                <value>
+                    <fullName>Website/Inbound</fullName>
+                    <default>false</default>
+                    <label>Website/Inbound</label>
+                </value>
+                <value>
+                    <fullName>Website/Inbound : Contact Forms</fullName>
+                    <default>false</default>
+                    <label>Website/Inbound : Contact Forms</label>
+                </value>
+                <value>
+                    <fullName>Website/Inbound : Email - Inbound</fullName>
+                    <default>false</default>
+                    <label>Website/Inbound : Email - Inbound</label>
+                </value>
+                <value>
+                    <fullName>Website/Inbound : Phone - Inbound</fullName>
+                    <default>false</default>
+                    <label>Website/Inbound : Phone - Inbound</label>
+                </value>
+                <value>
+                    <fullName>White Paper</fullName>
+                    <default>false</default>
+                    <label>White Paper</label>
+                </value>
+                <value>
+                    <fullName>White Paper : Case Study</fullName>
+                    <default>false</default>
+                    <label>White Paper : Case Study</label>
+                </value>
+                <value>
+                    <fullName>White Paper : Toolkit</fullName>
+                    <default>false</default>
+                    <label>White Paper : Toolkit</label>
+                </value>
+                <value>
+                    <fullName>White Paper : Whitepaper CPL</fullName>
+                    <default>false</default>
+                    <label>White Paper : Whitepaper CPL</label>
+                </value>
+                <value>
+                    <fullName>Event: Workshops</fullName>
+                    <default>false</default>
+                    <label>Event: Workshops</label>
+                </value>
+                <value>
+                    <fullName>Event: FED/SLED</fullName>
+                    <default>false</default>
+                    <label>Event: FED/SLED</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CreateLeadfromContact__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>This field is used to Enable/Disable Creation of Lead from Contact upon Campaign Member Creation (PHX-5980) and by default it is checked.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to Enable/Disable Creation of Lead from Contact upon Campaign Member Creation.</inlineHelpText>
+        <label>Create Lead from Contact</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Direction__c</fullName>
+        <externalId>false</externalId>
+        <label>Direction</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Inbound</fullName>
+                    <default>false</default>
+                    <label>Inbound</label>
+                </value>
+                <value>
+                    <fullName>Outbound</fullName>
+                    <default>false</default>
+                    <label>Outbound</label>
+                </value>
+                <value>
+                    <fullName>Neutral</fullName>
+                    <default>false</default>
+                    <label>Neutral</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>ExpectedResponse</fullName>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+    </fields>
+    <fields>
+        <fullName>FollowUpResources__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to a document with additional follow-up resources (e.g. scripts, follow-up questions, takeaways, pitches)</inlineHelpText>
+        <label>Follow Up Resources</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>FunnelStage__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The stage of the buyer&apos;s journey this campaign aligns to</inlineHelpText>
+        <label>Funnel Stage</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Awareness</fullName>
+                    <default>false</default>
+                    <label>Awareness</label>
+                </value>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                    <label>Education</label>
+                </value>
+                <value>
+                    <fullName>Conversion</fullName>
+                    <default>false</default>
+                    <label>Conversion</label>
+                </value>
+                <value>
+                    <fullName>Bottom</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Bottom</label>
+                </value>
+                <value>
+                    <fullName>Middle</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Middle</label>
+                </value>
+                <value>
+                    <fullName>Top</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Top</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HierarchyActualCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyBudgetedCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyExpectedRevenue</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>HotLeadCampaign__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If a Lead is a member of any Campaign that has this checkbox checked, the Hot Lead flame image will appear</description>
+        <externalId>false</externalId>
+        <label>Hot Lead Campaign</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>InternalDerivedId__c</fullName>
+        <description>This field is populated with the Campaign ID assigned during data migration for the purposes of identifying the truly unique campaign, parsing out the variations due to attendance statuses. It will be used for data migration purposes to link Leads and Campaign Members based on this new derived ID, and will only be applicable for Phoenix 1.0, and possible Phoenix 2.0. This field should NOT be used for any Campaign integrations between Salesforce and NetSuite after Release 1.0. The Campaign legacy NetSuite IDs are combined and reported within the &quot;Campaign Legacy Combined NetSuite ID&quot;. For example, a &quot;Campaign Internal Derived ID&quot; = &quot;1&quot; may have a &quot;Campaign Legacy Combined NetSuite ID&quot; = &quot;6,7,8,9&quot; indicating there were 4 legacy Campaigns which were consolidated into 1. All three custom Campaign ID-related fields, in theory, will have the same value for any campaigns created by post-migration. However, only the &quot;NetSuite Campaign ID&quot; field will be populated post-migration.</description>
+        <externalId>true</externalId>
+        <label>Campaign Internal Derived ID</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+    </fields>
+    <fields>
+        <fullName>LegacyCombinedNetsuiteId__c</fullName>
+        <description>This field captures concatenates the legacy NetSuite Campaign IDs together based on the transformation to identify the truly unique campaign (parsing out the variations due to attendance statuses). For example, a &quot;Campaign Internal Derived ID&quot; = &quot;1&quot; may have a &quot;Campaign Legacy Combined NetSuite ID&quot; = &quot;6,7,8,9&quot;. All three custom Campaign ID-related fields, in theory, will have the same value for any campaigns created by post-migration. However, only the &quot;NetSuite Campaign ID&quot; field will be populated post-migration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used ONLY for purposes of data migration from NetSuite for Phoenix 1.0 and possibly for Phoenix 2.0</inlineHelpText>
+        <label>Campaign Legacy Combined NetSuite ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LinktoAsset__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the asset promoted by this campaign</inlineHelpText>
+        <label>Link to Asset</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>MQLGoal__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The forecasted number of MQLs this campaign will generate</inlineHelpText>
+        <label>MQL Goal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+    </fields>
+    <fields>
+        <fullName>NetsuiteCampaignInternalId__c</fullName>
+        <description>This field allows linking back to NetSuite by choosing one of the combined legacy Campaign IDs and providing a single value. For example, a &quot;Campaign Internal Derived ID&quot; = &quot;1&quot; will have &quot;Campaign Legacy Combined NetSuite ID&quot; = &quot;6,7,8,9&quot; and the &quot;NetSuite Campaign ID&quot; will be &quot;6&quot;. All three custom Campaign ID-related fields, in theory, will have the same value for any campaigns created by post-migration. However, only the &quot;NetSuite Campaign ID&quot; field will be populated post-migration.</description>
+        <externalId>false</externalId>
+        <label>Netsuite Campaign Internal ID</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PowerOfOne__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PowerOfOne - Campaign</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductFamily__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Family</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Products</fullName>
+                    <default>false</default>
+		    <isActive>false</isActive>
+                    <label>All Products</label>
+                </value>
+                <value>
+                    <fullName>Analytic Response</fullName>
+                    <default>false</default>
+		    <isActive>false</isActive>
+                    <label>Analytic Response</label>
+                </value>
+                <value>
+                    <fullName>AppSpider</fullName>
+                    <default>false</default>
+                    <label>AppSpider</label>
+                </value>
+                <value>
+                    <fullName>Incident Detection and Response</fullName>
+                    <default>false</default>
+                    <label>Incident Detection and Response</label>
+                </value>
+                <value>
+                    <fullName>Incident Response Services</fullName>
+                    <default>false</default>
+		    <isActive>false</isActive>
+                    <label>Incident Response Services</label>
+                </value>
+                <value>
+                    <fullName>InsightAppSec</fullName>
+                    <default>false</default>
+                    <label>InsightAppSec</label>
+                </value>
+                <value>
+                    <fullName>InsightIDR</fullName>
+                    <default>false</default>
+                    <label>InsightIDR</label>
+                </value>
+                <value>
+                    <fullName>InsightOps</fullName>
+                    <default>false</default>
+                    <label>InsightOps</label>
+                </value>
+                <value>
+                    <fullName>InsightPhish</fullName>
+                    <default>false</default>
+		    <isActive>false</isActive>
+                    <label>InsightPhishing</label>
+                </value>
+                <value>
+                    <fullName>Insight Platform</fullName>
+                    <default>false</default>
+                    <label>Insight Platform</label>
+                </value>
+                <value>
+                    <fullName>InsightUBA</fullName>
+                    <default>false</default>
+		    <isActive>false</isActive>
+                    <label>InsightUBA</label>
+                </value>
+                <value>
+                    <fullName>InsightVM</fullName>
+                    <default>false</default>
+                    <label>InsightVM</label>
+                </value>
+                <value>
+                    <fullName>Komand</fullName>
+                    <default>false</default>
+		    <isActive>false</isActive>
+                    <label>Komand</label>
+                </value>
+                <value>
+                    <fullName>LogEntries</fullName>
+                    <default>false</default>
+		    <isActive>false</isActive>
+                    <label>LogEntries</label>
+                </value>
+                <value>
+                    <fullName>Managed Service</fullName>
+                    <default>false</default>
+                    <label>Managed Service</label>
+                </value>
+                <value>
+                    <fullName>Metasploit</fullName>
+                    <default>false</default>
+                    <label>Metasploit</label>
+                </value>
+                <value>
+                    <fullName>Nexpose</fullName>
+                    <default>false</default>
+                    <label>Nexpose</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+		    <isActive>false</isActive>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Services</fullName>
+                    <default>false</default>
+                    <label>Services</label>
+                </value>
+                <value>
+                    <fullName>Strategic Services</fullName>
+                    <default>false</default>
+		    <isActive>false</isActive>
+                    <label>Strategic Services</label>
+                </value>
+                <value>
+                    <fullName>Threat Exposure Management</fullName>
+                    <default>false</default>
+                    <label>Threat Exposure Management</label>
+                </value>
+                <value>
+                    <fullName>InsightConnect</fullName>
+                    <default>false</default>
+                    <label>InsightConnect</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ProductSubscriptionProductCode__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Product Subscription Product Code</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Code__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used only for the Self Registration type of campaign, so the value will be populated only on that type of campaigns.</inlineHelpText>
+        <label>Self Registration Product Code</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ViewAllCampaignMembers__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+$User.UIThemeDisplayed=&quot;Theme4d&quot;,
+(HYPERLINK($Setup.EnvironmentSetting__c.LightningBaseURL__c &amp; &quot;one/one.app#/sObject/&quot;&amp; $Setup.EnvironmentSetting__c.ReportId__c&amp;&quot;/view?fv0= &quot;&amp; Id&amp;&quot;&quot;,&quot;View All Campaign Member&quot;)),
+(HYPERLINK(&quot;/&quot;&amp; $Setup.EnvironmentSetting__c.ReportId__c&amp;&quot;?pv0=&quot;&amp;Id&amp;&quot;&quot;,&quot;View All Campaign Member&quot;))
+)</formula>
+        <label>View All Campaign Member</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <searchLayouts>
+        <customTabListAdditionalFields>CAMPAIGN.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.START_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CAMPAIGN.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PARENT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.CAMPAIGN_TYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.START_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.END_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NUM_RESPONSES</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>ViewAllCampaignMembers</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View All Campaign Members</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/camp/rptcmpgncalldown.jsp?scope=1&amp;scopeid={!Campaign_Name}</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>ViewCampaignInfluenceReport</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View Campaign Influence Report</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O?rt=117&amp;break0=CAN&amp;scope=1&amp;scopeid_lkid={!Campaign.Id}&amp;scopeid={!Campaign_Name}&amp;c=CAN&amp;c=MR&amp;c=PCS&amp;c=CFN&amp;c=RN&amp;c=ON&amp;c=OA&amp;c=OS&amp;c=OCD&amp;c=AN&amp;s=OA&amp;duel0=CAN%2CMR%2CCFN%2CRN%2CAN%2CON%2CPCS%2COS%2COCD%2COA&amp;details=yes&amp;format=t</url>
+        <width>500</width>
+    </webLinks>
+</CustomObject>

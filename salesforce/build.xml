@@ -1,0 +1,79 @@
+<project name="Phoenix" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
+
+    <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
+        <classpath>
+            <pathelement location="ant-salesforce.jar" />            
+        </classpath>
+    </taskdef>
+
+    <!--
+    `clean` will completely replace the src folder with a fresh set of
+    metadata retrieved from Salesforce. This is accomplished by the
+    following steps. This works like the "Clean Project" action in MavensMate.
+
+    1. Remove tmp/src if it exists
+    2. Create tmp/src as target directory for retrieve
+    3. Retrieve into tmp/src using src/package.xml manifest
+    4. Delete src directory
+    5. Move tmp/src to . to take the place of the deleted src folder
+    -->
+    <target name="clean">
+        <delete dir="tmp/src" quiet="true"/>
+        <mkdir dir="tmp/src"/>
+        <sf:retrieve username="${sf.username}" password="${sf.password}" 
+            serverurl="${sf.serverurl}" unpackaged="src/package.xml" 
+            retrieveTarget="tmp/src"/>
+        <delete dir="src"/>
+        <move file="tmp/src" todir="."/>
+
+        <!-- Work around CRLF and LF line ending annoynaces -->
+        <echo message="git add src"/>
+        <exec executable="git">
+            <arg value="add"/>
+            <arg value="src"/>
+        </exec>
+        <echo message="git reset HEAD src"/>
+        <exec executable="git">
+            <arg value="reset"/>
+            <arg value="HEAD"/>
+            <arg value="src"/>
+        </exec>
+
+        <!-- Work around annoynace diffs for Dashboard and Document object -->
+        <exec executable="git">
+            <arg value="checkout"/>
+            <arg value="--"/>
+            <arg value="src/objects/Dashboard.object"/>
+            <arg value="src/objects/Document.object"/>
+        </exec>
+    </target>
+
+    <!-- PHX-1424 story specific targets -->
+    <!-- Complie will Deploy to the destination sandbox; don't run tests-->
+    <target name="compile">
+        <sf:deploy username="${sf.username}" password="${sf.password}" 
+            serverurl="${sf.serverurl}" deployroot="src" rollbackOnError="true" 
+            testLevel="NoTestRun"/>
+    </target>
+
+    <!-- Deploy will Deploy to the destination sandbox; run local tests-->
+    <target name="deploy">
+        <sf:deploy username="${sf.username}" password="${sf.password}" 
+            serverurl="${sf.serverurl}" deployroot="src" rollbackOnError="true" 
+            testLevel="RunLocalTests"/>
+    </target>
+
+    <!-- Validate a deployment without actually making real changes in the
+         target organization -->
+    <target name="validate">
+        <sf:deploy serverurl="${sf.serverurl}"
+            username="${sf.username}" password="${sf.password}"
+            checkOnly="true" 
+            testLevel="RunLocalTests"
+            deployRoot="src"/>
+    </target>
+    
+    <!-- Check will Deploy to destination; run local tests; retrieve from destination-->
+    <target name="check" depends="deploy,clean"></target>
+    
+</project> 
