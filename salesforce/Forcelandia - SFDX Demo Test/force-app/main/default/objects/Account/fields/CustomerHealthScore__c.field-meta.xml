@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomerHealthScore__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Very Healthy = 80 to 100.  Healthy = 65-79. Neutral = 50 - 64. Unhealthy = 35 -49. Very Unhealthy = 0 -34.</inlineHelpText>
+    <label>Health Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

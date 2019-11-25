@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubCheckBoxes__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-check boxes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No business impact</fullName>
+                <default>false</default>
+                <label>No business impact</label>
+            </value>
+            <value>
+                <fullName>No logs / enhanced logs</fullName>
+                <default>false</default>
+                <label>No logs / enhanced logs</label>
+            </value>
+            <value>
+                <fullName>Not enough explanation of issue or steps undertaken</fullName>
+                <default>false</default>
+                <label>Not enough explanation of issue or steps undertaken</label>
+            </value>
+            <value>
+                <fullName>No escalation to backline queue</fullName>
+                <default>false</default>
+                <label>No escalation to backline queue</label>
+            </value>
+            <value>
+                <fullName>Provided incorrect info</fullName>
+                <default>false</default>
+                <label>Provided incorrect info</label>
+            </value>
+            <value>
+                <fullName>Missed basics in troubleshooting</fullName>
+                <default>false</default>
+                <label>Missed basics in troubleshooting</label>
+            </value>
+            <value>
+                <fullName>No contact on case</fullName>
+                <default>false</default>
+                <label>No contact on case</label>
+            </value>
+            <value>
+                <fullName>Rockstar Case</fullName>
+                <default>false</default>
+                <label>Rockstar Case</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

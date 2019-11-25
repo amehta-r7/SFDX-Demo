@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomerSuccess</fullName>
+    <active>true</active>
+    <businessProcess>Customer Success Representatives</businessProcess>
+    <label>Customer Success</label>
+    <picklistValues>
+        <picklist>CSEUrgency__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CSRCategory__c</picklist>
+        <values>
+            <fullName>Billing%2FInvoice Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentations Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GDPR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Email Blast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License Resets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migrations - LE to IOPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migrations - NXP to IVM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewals - Cancellation or Downgrade Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewals - General Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewals - Payment Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewals - Quote Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales - Request for help</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales - Upsell%2FCross Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Credentials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Escalation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CSR_Priority__c</picklist>
+        <values>
+            <fullName>1 - Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2- High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Very Low</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cases__c</picklist>
+        <values>
+            <fullName>Cases</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Documentation__c</picklist>
+        <values>
+            <fullName>Article is not present</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Article present and successfully used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Article present but needs improvement to be used successfully</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Engine_Pairing__c</picklist>
+        <values>
+            <fullName>Distributed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hosted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fulfillments__c</picklist>
+        <values>
+            <fullName>Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Change</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IsThisCaseaRFE__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>JiveType__c</picklist>
+        <values>
+            <fullName>Discussion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Appliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chatter Answers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Success</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Phone Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Survey Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voicemail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>support%40netfort%2Ecom</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PreSalesPriority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PreferredContactMethod__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>1 - Mission Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProductFamily__c</picklist>
+        <values>
+            <fullName>AppSpider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LANGuardian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Application Security %28MAS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Detection Response %28MDR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Vulnerability Management %28MVM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metasploit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nexpose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RelatedIssueFixedEmailStatus__c</picklist>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Should send and close</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Should send only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SendCaseCreationNotification__c</picklist>
+        <values>
+            <fullName>No Need</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Now</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SubCheckBoxes__c</picklist>
+        <values>
+            <fullName>Missed basics in troubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No business impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No contact on case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No escalation to backline queue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No logs %2F enhanced logs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not enough explanation of issue or steps undertaken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provided incorrect info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rockstar Case</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tier__c</picklist>
+        <values>
+            <fullName>Backline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frontline</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Sustaining</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TimeZone__c</picklist>
+        <values>
+            <fullName>%28GMT%2B01%3A00%29 British Summer Time %28Europe%2FLondon%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B08%3A00%29 Singapore Standard Time %28Asia%2FSingapore%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT%2B10%3A00%29 Australian Eastern Standard Time %28Australia%2FBrisbane%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-04%3A00%29 Eastern Daylight Time %28America%2FNew_York%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-05%3A00%29 Central Daylight Time %28America%2FMexico_City%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-07%3A00%29 Pacific Daylight Time %28America%2FLos_Angeles%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>API %2F Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>False Positives %2F Negatives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misfingerprints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Request and Orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scan Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scanning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Escalations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Request%2FQuestion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Interface</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelatedIssueFixedEmailStatus__c</fullName>
+    <externalId>false</externalId>
+    <label>Related Issue Fixed Email Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Should send only</fullName>
+                <default>false</default>
+                <label>Should send only</label>
+            </value>
+            <value>
+                <fullName>Should send and close</fullName>
+                <default>false</default>
+                <label>Should send and close</label>
+            </value>
+            <value>
+                <fullName>Sent</fullName>
+                <default>false</default>
+                <label>Sent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

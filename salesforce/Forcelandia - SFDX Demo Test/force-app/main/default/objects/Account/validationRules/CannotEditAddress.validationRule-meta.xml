@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CannotEditAddress</fullName>
+    <active>true</active>
+    <description>If the Account has been published, the addresses cannot be updated in Salesforce.</description>
+    <errorConditionFormula>(
+  NOT(ISNEW()) &amp;&amp;
+  ISPICKVAL(PublishingStatus__c, &quot;Published&quot;) &amp;&amp;
+  (
+    ISCHANGED(BillingStreet) ||
+    ISCHANGED(BillingCity) ||
+    ISCHANGED(BillingState) ||
+    ISCHANGED(BillingPostalCode) ||
+    ISCHANGED(BillingCountry) ||
+    ISCHANGED(ShippingStreet) ||
+    ISCHANGED(ShippingCity) ||
+    ISCHANGED(ShippingState) ||
+    ISCHANGED(ShippingPostalCode) ||
+    ISCHANGED(ShippingCountry)
+  ) &amp;&amp;
+  $Profile.Name &lt;&gt; &quot;System Administrator&quot; &amp;&amp;
+  NOT( $Permission.BypassValidationRules )
+)</errorConditionFormula>
+    <errorMessage>Addresses cannot be edited if the Account has been published to NetSuite</errorMessage>
+</ValidationRule>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReportingDivision__c</fullName>
+    <externalId>false</externalId>
+    <label>Reporting Division</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ManagerLevelTeam__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>APAC</fullName>
+                <default>false</default>
+                <label>APAC</label>
+            </value>
+            <value>
+                <fullName>Central</fullName>
+                <default>false</default>
+                <label>Central</label>
+            </value>
+            <value>
+                <fullName>East</fullName>
+                <default>false</default>
+                <label>East</label>
+            </value>
+            <value>
+                <fullName>EMEA</fullName>
+                <default>false</default>
+                <label>EMEA</label>
+            </value>
+            <value>
+                <fullName>Federal</fullName>
+                <default>false</default>
+                <label>Federal</label>
+            </value>
+            <value>
+                <fullName>LATAM</fullName>
+                <default>false</default>
+                <label>LATAM</label>
+            </value>
+            <value>
+                <fullName>SLED</fullName>
+                <default>false</default>
+                <label>SLED</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>West</fullName>
+                <default>false</default>
+                <label>West</label>
+            </value>
+            <value>
+                <fullName>National</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>APAC China</controllingFieldValue>
+            <controllingFieldValue>APAC India</controllingFieldValue>
+            <controllingFieldValue>APAC Japan</controllingFieldValue>
+            <controllingFieldValue>APAC Korea</controllingFieldValue>
+            <controllingFieldValue>APAC Southeast Asia</controllingFieldValue>
+            <controllingFieldValue>APAC ANZ</controllingFieldValue>
+            <valueName>APAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West Enterprise</controllingFieldValue>
+            <controllingFieldValue>West Canada</controllingFieldValue>
+            <controllingFieldValue>West Named North</controllingFieldValue>
+            <controllingFieldValue>West Mid-Market North</controllingFieldValue>
+            <controllingFieldValue>West Named South</controllingFieldValue>
+            <controllingFieldValue>West Mid-Market South</controllingFieldValue>
+            <valueName>West</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA DACH &amp; Benelux</controllingFieldValue>
+            <controllingFieldValue>EMEA Eastern Europe</controllingFieldValue>
+            <controllingFieldValue>EMEA Middle East &amp; Africa</controllingFieldValue>
+            <controllingFieldValue>EMEA Southern Europe</controllingFieldValue>
+            <controllingFieldValue>EMEA-Scandinavia/Nordics</controllingFieldValue>
+            <controllingFieldValue>EMEA-UK-Ireland</controllingFieldValue>
+            <valueName>EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central Mid-Market North</controllingFieldValue>
+            <controllingFieldValue>Central Mid-Market South</controllingFieldValue>
+            <controllingFieldValue>Central Enterprise</controllingFieldValue>
+            <controllingFieldValue>Central Named North</controllingFieldValue>
+            <controllingFieldValue>Central Named South</controllingFieldValue>
+            <valueName>Central</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East Mid-Market North</controllingFieldValue>
+            <controllingFieldValue>East Mid-Market South</controllingFieldValue>
+            <controllingFieldValue>East Enterprise</controllingFieldValue>
+            <controllingFieldValue>East Named North</controllingFieldValue>
+            <controllingFieldValue>East Named South</controllingFieldValue>
+            <valueName>East</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal</controllingFieldValue>
+            <valueName>Federal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LATAM</controllingFieldValue>
+            <valueName>LATAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLED East</controllingFieldValue>
+            <controllingFieldValue>SLED West</controllingFieldValue>
+            <valueName>SLED</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

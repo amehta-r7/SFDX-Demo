@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSRCategory__c</fullName>
+    <externalId>false</externalId>
+    <label>CSR Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Billing/Invoice Inquiry</fullName>
+                <default>false</default>
+                <label>Billing/Invoice Inquiry</label>
+            </value>
+            <value>
+                <fullName>Documentations Request</fullName>
+                <default>false</default>
+                <label>Documentations Request</label>
+            </value>
+            <value>
+                <fullName>GDPR</fullName>
+                <default>false</default>
+                <label>GDPR</label>
+            </value>
+            <value>
+                <fullName>Integration Issues</fullName>
+                <default>false</default>
+                <label>Integration Issues</label>
+            </value>
+            <value>
+                <fullName>Internal Email Blast</fullName>
+                <default>false</default>
+                <label>Internal Email Blast</label>
+            </value>
+            <value>
+                <fullName>License Resets</fullName>
+                <default>false</default>
+                <label>License Resets</label>
+            </value>
+            <value>
+                <fullName>Migrations - LE to IOPS</fullName>
+                <default>false</default>
+                <label>Migrations - LE to IOPS</label>
+            </value>
+            <value>
+                <fullName>Migrations - NXP to IVM</fullName>
+                <default>false</default>
+                <label>Migrations - NXP to IVM</label>
+            </value>
+            <value>
+                <fullName>Product Inquiry</fullName>
+                <default>false</default>
+                <label>Product Inquiry</label>
+            </value>
+            <value>
+                <fullName>Renewals - Cancellation or Downgrade Request</fullName>
+                <default>false</default>
+                <label>Renewals - Cancellation or Downgrade Request</label>
+            </value>
+            <value>
+                <fullName>Renewals - General Inquiry</fullName>
+                <default>false</default>
+                <label>Renewals - General Inquiry</label>
+            </value>
+            <value>
+                <fullName>Renewals - Payment Received</fullName>
+                <default>false</default>
+                <label>Renewals - Payment Received</label>
+            </value>
+            <value>
+                <fullName>Renewals - Quote Request</fullName>
+                <default>false</default>
+                <label>Renewals - Quote Request</label>
+            </value>
+            <value>
+                <fullName>Sales - Request for help</fullName>
+                <default>false</default>
+                <label>Sales - Request for help</label>
+            </value>
+            <value>
+                <fullName>Sales - Upsell/Cross Sell</fullName>
+                <default>false</default>
+                <label>Sales - Upsell/Cross Sell</label>
+            </value>
+            <value>
+                <fullName>Support Credentials</fullName>
+                <default>false</default>
+                <label>Support Credentials</label>
+            </value>
+            <value>
+                <fullName>Support Escalation</fullName>
+                <default>false</default>
+                <label>Support Escalation</label>
+            </value>
+            <value>
+                <fullName>SOAR</fullName>
+                <default>false</default>
+                <label>SOAR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

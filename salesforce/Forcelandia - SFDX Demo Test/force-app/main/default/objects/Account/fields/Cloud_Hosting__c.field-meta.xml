@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cloud_Hosting__c</fullName>
+    <externalId>false</externalId>
+    <label>Cloud Hosting</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AWS</fullName>
+                <default>false</default>
+                <label>AWS</label>
+            </value>
+            <value>
+                <fullName>Azure</fullName>
+                <default>false</default>
+                <label>Azure</label>
+            </value>
+            <value>
+                <fullName>Google</fullName>
+                <default>false</default>
+                <label>Google</label>
+            </value>
+            <value>
+                <fullName>RackSpace</fullName>
+                <default>false</default>
+                <label>RackSpace</label>
+            </value>
+            <value>
+                <fullName>Cloud Averse</fullName>
+                <default>false</default>
+                <label>Cloud Averse</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>infer3__Infer_Rating__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>TRIM(SUBSTITUTE(MID(CASE(FLOOR(infer3__Score_Index__c/255),0,infer3__Score_Object_ID__r.infer3__Rating_0__c,1,infer3__Score_Object_ID__r.infer3__Rating_1__c,2,infer3__Score_Object_ID__r.infer3__Rating_2__c,3,infer3__Score_Object_ID__r.infer3__Rating_3__c,4,infer3__Score_Object_ID__r.infer3__Rating_4__c,5,infer3__Score_Object_ID__r.infer3__Rating_5__c,6,infer3__Score_Object_ID__r.infer3__Rating_6__c,null),1+MOD(infer3__Score_Index__c,255),1),&#39;^&#39;,&#39; &#39;))</formula>
+    <label>Infer: Fit Score</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

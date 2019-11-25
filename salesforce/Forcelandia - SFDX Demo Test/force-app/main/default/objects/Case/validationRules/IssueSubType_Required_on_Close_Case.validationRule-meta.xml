@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IssueSubType_Required_on_Close_Case</fullName>
+    <active>true</active>
+    <description>APPS-1677</description>
+    <errorConditionFormula>AND(ISBLANK(TEXT(IssueSubType__c)),
+			 $Profile.Name != &#39;R7 Customer Community Login&#39;,
+				OR(ISPICKVAL(Status,&#39;Closed&#39;),ISPICKVAL(Status,&#39;Waiting on Customer&#39;),ISPICKVAL(Status,&#39;Waiting to Close&#39;))
+				)</errorConditionFormula>
+    <errorDisplayField>IssueSubType__c</errorDisplayField>
+    <errorMessage>You must fill out the Issue Sub Type before this Case can be moved to Closed or Solution Offered.</errorMessage>
+</ValidationRule>

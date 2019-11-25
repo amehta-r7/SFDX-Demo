@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesPriorityLevel__c</fullName>
+    <description>Please select the priority level for this Account. If the Account is a priority for more than one product set, you may select more than one option.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select the priority level for this Account. If the Account is a priority for more than one product set, you may select more than one option.</inlineHelpText>
+    <label>Sales Priority Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TEM Priority A</fullName>
+                <default>false</default>
+                <label>TEM Priority A</label>
+            </value>
+            <value>
+                <fullName>TEM Priority B</fullName>
+                <default>false</default>
+                <label>TEM Priority B</label>
+            </value>
+            <value>
+                <fullName>TEM Priority C</fullName>
+                <default>false</default>
+                <label>TEM Priority C</label>
+            </value>
+            <value>
+                <fullName>TEM Hot</fullName>
+                <default>false</default>
+                <label>TEM Hot</label>
+            </value>
+            <value>
+                <fullName>IDR Priority A</fullName>
+                <default>false</default>
+                <label>IDR Priority A</label>
+            </value>
+            <value>
+                <fullName>IDR Priority B</fullName>
+                <default>false</default>
+                <label>IDR Priority B</label>
+            </value>
+            <value>
+                <fullName>IDR Priority C</fullName>
+                <default>false</default>
+                <label>IDR Priority C</label>
+            </value>
+            <value>
+                <fullName>IDR Hot</fullName>
+                <default>false</default>
+                <label>IDR Hot</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

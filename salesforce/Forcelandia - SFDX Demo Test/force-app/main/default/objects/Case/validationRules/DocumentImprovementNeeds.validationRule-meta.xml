@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocumentImprovementNeeds</fullName>
+    <active>true</active>
+    <description>If Documentation dropdown values &quot;Article present but needs improvement to be used successfully&quot; is selected an additional notes field labeled: What improvements needed? will pop up</description>
+    <errorConditionFormula>IF( ISPICKVAL(Documentation__c , &#39;Article present but needs improvement to be used successfully&#39;) &amp;&amp; WhatImprovementsNeeded__c == &#39;&#39; , true, false) &amp;&amp;
+NOT( $Permission.BypassValidationRules )</errorConditionFormula>
+    <errorMessage>Please fill the What Improvements needed</errorMessage>
+</ValidationRule>

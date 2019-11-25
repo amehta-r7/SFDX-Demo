@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_100_accounts1</fullName>
+    <columns>CaseSafeID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>IsTop100__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>AccountExecutiveAE__c</field>
+        <operation>equals</operation>
+        <value>Sergio Drieman</value>
+    </filters>
+    <filters>
+        <field>IsTop100__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Top 100 accounts</label>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PartnerLevel__c</fullName>
+    <description>Shows partner levels applicable to pricing rules</description>
+    <externalId>false</externalId>
+    <formula>IF(INCLUDES( Rapid7PartnerLevel__c , &quot;Value Added Reseller - Bronze&quot;), &quot;Bronze&quot;,
+IF(INCLUDES( Rapid7PartnerLevel__c , &quot;Value Added Reseller - Silver&quot;), &quot;Silver&quot;,
+IF(INCLUDES( Rapid7PartnerLevel__c , &quot;Value Added Reseller - Gold&quot;), &quot;Gold&quot;, &quot;&quot;)))</formula>
+    <label>PACT Program Level</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

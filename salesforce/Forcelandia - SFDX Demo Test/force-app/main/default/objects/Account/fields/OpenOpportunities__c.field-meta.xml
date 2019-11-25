@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpenOpportunities__c</fullName>
+    <description>Field to Count Open Opportunities. (PHX-5432)</description>
+    <externalId>false</externalId>
+    <label>Open Opportunities</label>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>Pending Acceptance, Discovery, Positioning, Propose, Negotiation, Closed Submit</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PublicityRightsProhibited__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>APPS-3057</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This will be checked if the customer has opted out of Rapid7 using their name or logo without consent. This should not be used for reporting purposes</inlineHelpText>
+    <label>Publicity Rights Prohibited</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

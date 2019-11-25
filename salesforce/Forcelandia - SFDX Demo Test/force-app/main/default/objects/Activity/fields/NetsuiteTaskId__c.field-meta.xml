@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NetsuiteTaskId__c</fullName>
+    <description>NetSuite Task ID custom field for use by the Data Migration team for mapping and troubleshooting.</description>
+    <externalId>false</externalId>
+    <label>NetSuite Task ID</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InternalDerivedId__c</fullName>
+    <description>This field is populated with the Campaign ID assigned during data migration for the purposes of identifying the truly unique campaign, parsing out the variations due to attendance statuses. It will be used for data migration purposes to link Leads and Campaign Members based on this new derived ID, and will only be applicable for Phoenix 1.0, and possible Phoenix 2.0. This field should NOT be used for any Campaign integrations between Salesforce and NetSuite after Release 1.0. The Campaign legacy NetSuite IDs are combined and reported within the &quot;Campaign Legacy Combined NetSuite ID&quot;. For example, a &quot;Campaign Internal Derived ID&quot; = &quot;1&quot; may have a &quot;Campaign Legacy Combined NetSuite ID&quot; = &quot;6,7,8,9&quot; indicating there were 4 legacy Campaigns which were consolidated into 1. All three custom Campaign ID-related fields, in theory, will have the same value for any campaigns created by post-migration. However, only the &quot;NetSuite Campaign ID&quot; field will be populated post-migration.</description>
+    <externalId>true</externalId>
+    <label>Campaign Internal Derived ID</label>
+    <length>20</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

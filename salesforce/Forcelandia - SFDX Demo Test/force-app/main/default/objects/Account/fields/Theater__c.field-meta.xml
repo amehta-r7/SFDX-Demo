@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Theater__c</fullName>
+    <externalId>false</externalId>
+    <label>Theater</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>TeamTerritoryGroup__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>APAC ANZ</fullName>
+                <default>false</default>
+                <label>APAC ANZ</label>
+            </value>
+            <value>
+                <fullName>APAC Greater China</fullName>
+                <default>false</default>
+                <label>APAC Greater China</label>
+            </value>
+            <value>
+                <fullName>APAC India Region</fullName>
+                <default>false</default>
+                <label>APAC India Region</label>
+            </value>
+            <value>
+                <fullName>APAC Japan</fullName>
+                <default>false</default>
+                <label>APAC Japan</label>
+            </value>
+            <value>
+                <fullName>APAC Korea</fullName>
+                <default>false</default>
+                <label>APAC Korea</label>
+            </value>
+            <value>
+                <fullName>APAC SEA</fullName>
+                <default>false</default>
+                <label>APAC SEA</label>
+            </value>
+            <value>
+                <fullName>Central Enterprise</fullName>
+                <default>false</default>
+                <label>Central Enterprise</label>
+            </value>
+            <value>
+                <fullName>Central Mid-Market North</fullName>
+                <default>false</default>
+                <label>Central Mid-Market North</label>
+            </value>
+            <value>
+                <fullName>Central Mid-Market South</fullName>
+                <default>false</default>
+                <label>Central Mid-Market South</label>
+            </value>
+            <value>
+                <fullName>Central Named North</fullName>
+                <default>false</default>
+                <label>Central Named North</label>
+            </value>
+            <value>
+                <fullName>Central Named South</fullName>
+                <default>false</default>
+                <label>Central Named South</label>
+            </value>
+            <value>
+                <fullName>East Enterprise</fullName>
+                <default>false</default>
+                <label>East Enterprise</label>
+            </value>
+            <value>
+                <fullName>East Mid-Market North</fullName>
+                <default>false</default>
+                <label>East Mid-Market North</label>
+            </value>
+            <value>
+                <fullName>East Mid-Market South</fullName>
+                <default>false</default>
+                <label>East Mid-Market South</label>
+            </value>
+            <value>
+                <fullName>East Named North</fullName>
+                <default>false</default>
+                <label>East Named North</label>
+            </value>
+            <value>
+                <fullName>East Named South</fullName>
+                <default>false</default>
+                <label>East Named South</label>
+            </value>
+            <value>
+                <fullName>EMEA Africa</fullName>
+                <default>false</default>
+                <label>EMEA Africa</label>
+            </value>
+            <value>
+                <fullName>EMEA BeNeLux</fullName>
+                <default>false</default>
+                <label>EMEA BeNeLux</label>
+            </value>
+            <value>
+                <fullName>EMEA DACh</fullName>
+                <default>false</default>
+                <label>EMEA DACh</label>
+            </value>
+            <value>
+                <fullName>EMEA Eastern Europe</fullName>
+                <default>false</default>
+                <label>EMEA Eastern Europe</label>
+            </value>
+            <value>
+                <fullName>EMEA Middle East</fullName>
+                <default>false</default>
+                <label>EMEA Middle East</label>
+            </value>
+            <value>
+                <fullName>EMEA Scandinavia/Nordics</fullName>
+                <default>false</default>
+                <label>EMEA Scandinavia/Nordics</label>
+            </value>
+            <value>
+                <fullName>EMEA Southern Europe</fullName>
+                <default>false</default>
+                <label>EMEA Southern Europe</label>
+            </value>
+            <value>
+                <fullName>EMEA UK/Ireland</fullName>
+                <default>false</default>
+                <label>EMEA UK/Ireland</label>
+            </value>
+            <value>
+                <fullName>Federal</fullName>
+                <default>false</default>
+                <label>Federal</label>
+            </value>
+            <value>
+                <fullName>LATAM</fullName>
+                <default>false</default>
+                <label>LATAM</label>
+            </value>
+            <value>
+                <fullName>SLED East</fullName>
+                <default>false</default>
+                <label>SLED East</label>
+            </value>
+            <value>
+                <fullName>SLED West</fullName>
+                <default>false</default>
+                <label>SLED West</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>West Canada</fullName>
+                <default>false</default>
+                <label>West Canada</label>
+            </value>
+            <value>
+                <fullName>West Enterprise</fullName>
+                <default>false</default>
+                <label>West Enterprise</label>
+            </value>
+            <value>
+                <fullName>West Mid-Market Canada</fullName>
+                <default>false</default>
+                <label>West Mid-Market Canada</label>
+            </value>
+            <value>
+                <fullName>West Mid-Market North</fullName>
+                <default>false</default>
+                <label>West Mid-Market North</label>
+            </value>
+            <value>
+                <fullName>West Mid-Market South</fullName>
+                <default>false</default>
+                <label>West Mid-Market South</label>
+            </value>
+            <value>
+                <fullName>West Named North</fullName>
+                <default>false</default>
+                <label>West Named North</label>
+            </value>
+            <value>
+                <fullName>West Named South</fullName>
+                <default>false</default>
+                <label>West Named South</label>
+            </value>
+            <value>
+                <fullName>Central Majors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Central Majors</label>
+            </value>
+            <value>
+                <fullName>Central Mid-Market</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Central Mid-Market</label>
+            </value>
+            <value>
+                <fullName>East Majors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>East Majors</label>
+            </value>
+            <value>
+                <fullName>East Mid-Market</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>East Mid-Market</label>
+            </value>
+            <value>
+                <fullName>Federal Civillian Agencies</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Federal Civillian Agencies</label>
+            </value>
+            <value>
+                <fullName>Federal Dept of Defense</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Federal Dept of Defense</label>
+            </value>
+            <value>
+                <fullName>Federal Intelligence</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Federal Intelligence</label>
+            </value>
+            <value>
+                <fullName>National</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National</label>
+            </value>
+            <value>
+                <fullName>National Midwest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National Midwest</label>
+            </value>
+            <value>
+                <fullName>National Mountain</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National Mountain</label>
+            </value>
+            <value>
+                <fullName>National Northeast</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National Northeast</label>
+            </value>
+            <value>
+                <fullName>National Northwest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National Northwest</label>
+            </value>
+            <value>
+                <fullName>National Ohio Valley</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National Ohio Valley</label>
+            </value>
+            <value>
+                <fullName>National Southeast</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National Southeast</label>
+            </value>
+            <value>
+                <fullName>National Southwest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National Southwest</label>
+            </value>
+            <value>
+                <fullName>National TOLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National TOLA</label>
+            </value>
+            <value>
+                <fullName>National Upper Midwest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National Upper Midwest</label>
+            </value>
+            <value>
+                <fullName>North America</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>North America</label>
+            </value>
+            <value>
+                <fullName>SLED</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SLED</label>
+            </value>
+            <value>
+                <fullName>West Majors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West Majors</label>
+            </value>
+            <value>
+                <fullName>West Mid-Market US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West Mid-Market US</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>APAC-India-Region</controllingFieldValue>
+            <valueName>APAC India Region</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APAC-Japan</controllingFieldValue>
+            <valueName>APAC Japan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APAC-Korea</controllingFieldValue>
+            <valueName>APAC Korea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APAC-SEA</controllingFieldValue>
+            <valueName>APAC SEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA-Africa</controllingFieldValue>
+            <valueName>EMEA Africa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA-BeNeLux</controllingFieldValue>
+            <valueName>EMEA BeNeLux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA-DACh</controllingFieldValue>
+            <valueName>EMEA DACh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA-Eastern-Europe</controllingFieldValue>
+            <valueName>EMEA Eastern Europe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA-Middle-East</controllingFieldValue>
+            <valueName>EMEA Middle East</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA-Scandinavia-Nordics</controllingFieldValue>
+            <valueName>EMEA Scandinavia/Nordics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA-Southern-Europe</controllingFieldValue>
+            <valueName>EMEA Southern Europe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA-UK-Ireland</controllingFieldValue>
+            <valueName>EMEA UK/Ireland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LATAM</controllingFieldValue>
+            <valueName>LATAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central-Mid-Market North</controllingFieldValue>
+            <valueName>Central Mid-Market North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central-Mid-Market South</controllingFieldValue>
+            <valueName>Central Mid-Market South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East-Mid-Market North</controllingFieldValue>
+            <valueName>East Mid-Market North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East-Mid-Market South</controllingFieldValue>
+            <valueName>East Mid-Market South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West-Mid-Market-Canada</controllingFieldValue>
+            <valueName>West Mid-Market Canada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West-Mid-Market-North</controllingFieldValue>
+            <valueName>West Mid-Market North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West-Mid-Market-South</controllingFieldValue>
+            <valueName>West Mid-Market South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central-Named-North</controllingFieldValue>
+            <valueName>Central Named North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central-Named-South</controllingFieldValue>
+            <valueName>Central Named South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East-Named-North</controllingFieldValue>
+            <valueName>East Named North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East-Named-South</controllingFieldValue>
+            <valueName>East Named South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West-Named-Canada</controllingFieldValue>
+            <valueName>West Canada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West-Named-North</controllingFieldValue>
+            <valueName>West Named North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West-Named-South</controllingFieldValue>
+            <valueName>West Named South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central-Enterprise</controllingFieldValue>
+            <valueName>Central Enterprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East-Enterprise</controllingFieldValue>
+            <valueName>East Enterprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East-SLED-East</controllingFieldValue>
+            <valueName>SLED East</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East-SLED-West</controllingFieldValue>
+            <valueName>SLED West</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West-Enterprise</controllingFieldValue>
+            <valueName>West Enterprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal Civilian Agencies</controllingFieldValue>
+            <controllingFieldValue>Federal Dept of Defense</controllingFieldValue>
+            <controllingFieldValue>Federal Intelligence</controllingFieldValue>
+            <valueName>Federal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APAC-ANZ</controllingFieldValue>
+            <valueName>APAC ANZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APAC-Greater-China</controllingFieldValue>
+            <valueName>APAC Greater China</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

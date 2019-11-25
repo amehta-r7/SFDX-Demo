@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ViewAllCampaignMembers__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+$User.UIThemeDisplayed=&quot;Theme4d&quot;,
+(HYPERLINK($Setup.EnvironmentSetting__c.LightningBaseURL__c &amp; &quot;one/one.app#/sObject/&quot;&amp; $Setup.EnvironmentSetting__c.ReportId__c&amp;&quot;/view?fv0= &quot;&amp; Id&amp;&quot;&quot;,&quot;View All Campaign Member&quot;)),
+(HYPERLINK(&quot;/&quot;&amp; $Setup.EnvironmentSetting__c.ReportId__c&amp;&quot;?pv0=&quot;&amp;Id&amp;&quot;&quot;,&quot;View All Campaign Member&quot;))
+)</formula>
+    <label>View All Campaign Member</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

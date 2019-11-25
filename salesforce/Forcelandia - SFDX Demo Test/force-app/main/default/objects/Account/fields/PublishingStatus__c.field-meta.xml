@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PublishingStatus__c</fullName>
+    <description>Whether the record is published as data for consumption by other systems</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Whether the record is published as data for consumption by other systems</inlineHelpText>
+    <label>Publishing Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PublishingStatus</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExistingCustomerARR__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Notes whether this account / opp is considered an Existing ARR Customer (if checked) or New ARR Prospect (if unchecked) for operational tracking and compensation.</inlineHelpText>
+    <label>Existing Customer (ARR)</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HotLeadCampaign__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If a Lead is a member of any Campaign that has this checkbox checked, the Hot Lead flame image will appear</description>
+    <externalId>false</externalId>
+    <label>Hot Lead Campaign</label>
+    <type>Checkbox</type>
+</CustomField>

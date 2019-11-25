@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OldCaseThreadId__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;ref:_&quot; &amp; LEFT(&#39;00D30000000mfKb&#39;,5) &amp; RIGHT(&#39;00D30000000mfKb&#39;,4) &amp; &quot;._&quot; &amp; LEFT( Left(OldCaseId__c,15) ,5) &amp; SUBSTITUTE(Left(RIGHT(Left(OldCaseId__c,15),10), 5), &quot;0&quot;, &quot;&quot;) &amp; RIGHT(Left(OldCaseId__c,15),5) &amp; &quot;:ref&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Old Case Thread Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

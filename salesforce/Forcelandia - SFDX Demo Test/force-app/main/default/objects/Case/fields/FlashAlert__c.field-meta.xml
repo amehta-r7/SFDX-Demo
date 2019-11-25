@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FlashAlert__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ShowFlashImage__c,IMAGE(&quot;/resource/FlashImage&quot;,&#39;Flash&#39;),&#39;&#39;)</formula>
+    <label>Flash Alert</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

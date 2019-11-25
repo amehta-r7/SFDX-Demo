@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PartnerAnnualRevenue__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Annual Revenue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt; $5M</fullName>
+                <default>false</default>
+                <label>&lt; $5M</label>
+            </value>
+            <value>
+                <fullName>$5M - $10M</fullName>
+                <default>false</default>
+                <label>$5M - $10M</label>
+            </value>
+            <value>
+                <fullName>$11M - $25M</fullName>
+                <default>false</default>
+                <label>$11M - $25M</label>
+            </value>
+            <value>
+                <fullName>$26M - $50M</fullName>
+                <default>false</default>
+                <label>$26M - $50M</label>
+            </value>
+            <value>
+                <fullName>$51M - $100M</fullName>
+                <default>false</default>
+                <label>$51M - $100M</label>
+            </value>
+            <value>
+                <fullName>$101M - $500M</fullName>
+                <default>false</default>
+                <label>$101M - $500M</label>
+            </value>
+            <value>
+                <fullName>$501M - $1B</fullName>
+                <default>false</default>
+                <label>$501M - $1B</label>
+            </value>
+            <value>
+                <fullName>&gt; $1B</fullName>
+                <default>false</default>
+                <label>&gt; $1B</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

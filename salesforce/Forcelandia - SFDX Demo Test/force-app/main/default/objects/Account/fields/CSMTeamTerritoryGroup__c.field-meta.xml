@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSMTeamTerritoryGroup__c</fullName>
+    <externalId>false</externalId>
+    <label>CSM Team Territory Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+                <label>Tier 1</label>
+            </value>
+            <value>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+                <label>Tier 2</label>
+            </value>
+            <value>
+                <fullName>Tier 3 East</fullName>
+                <default>false</default>
+                <label>Tier 3 East</label>
+            </value>
+            <value>
+                <fullName>Tier 3 West</fullName>
+                <default>false</default>
+                <label>Tier 3 West</label>
+            </value>
+            <value>
+                <fullName>Tier 3 Central</fullName>
+                <default>false</default>
+                <label>Tier 3 Central</label>
+            </value>
+            <value>
+                <fullName>Tier 4</fullName>
+                <default>false</default>
+                <label>Tier 4</label>
+            </value>
+            <value>
+                <fullName>EMEA</fullName>
+                <default>false</default>
+                <label>EMEA</label>
+            </value>
+            <value>
+                <fullName>LATAM</fullName>
+                <default>false</default>
+                <label>LATAM</label>
+            </value>
+            <value>
+                <fullName>APAC</fullName>
+                <default>false</default>
+                <label>APAC</label>
+            </value>
+            <value>
+                <fullName>Tier 0</fullName>
+                <default>false</default>
+                <label>Tier 0</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

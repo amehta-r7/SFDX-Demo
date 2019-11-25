@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MeetingRequested__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This Checkbox is used to check when the Request Meeting from customer is sent</description>
+    <externalId>false</externalId>
+    <label>Meeting Requested</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

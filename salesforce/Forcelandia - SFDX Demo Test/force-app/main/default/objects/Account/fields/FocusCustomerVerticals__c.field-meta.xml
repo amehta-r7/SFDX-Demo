@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FocusCustomerVerticals__c</fullName>
+    <externalId>false</externalId>
+    <label>Focus Customer Verticals</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Computer / Technology Mfg</fullName>
+                <default>false</default>
+                <label>Computer / Technology Mfg</label>
+            </value>
+            <value>
+                <fullName>Energy &amp; Utilities</fullName>
+                <default>false</default>
+                <label>Energy &amp; Utilities</label>
+            </value>
+            <value>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+                <label>Financial Services</label>
+            </value>
+            <value>
+                <fullName>Government-Federal</fullName>
+                <default>false</default>
+                <label>Government-Federal</label>
+            </value>
+            <value>
+                <fullName>Government-State/Local</fullName>
+                <default>false</default>
+                <label>Government-State/Local</label>
+            </value>
+            <value>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+                <label>Healthcare</label>
+            </value>
+            <value>
+                <fullName>Industrial Manufacturing</fullName>
+                <default>false</default>
+                <label>Industrial Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Publishing/Broadcast/Media</fullName>
+                <default>false</default>
+                <label>Publishing/Broadcast/Media</label>
+            </value>
+            <value>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+                <label>Real Estate</label>
+            </value>
+            <value>
+                <fullName>Retail / Wholesale</fullName>
+                <default>false</default>
+                <label>Retail / Wholesale</label>
+            </value>
+            <value>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <label>Telecommunications</label>
+            </value>
+            <value>
+                <fullName>Transportation / Distribution</fullName>
+                <default>false</default>
+                <label>Transportation / Distribution</label>
+            </value>
+            <value>
+                <fullName>Travel/Hospitality/Recreation</fullName>
+                <default>false</default>
+                <label>Travel/Hospitality/Recreation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

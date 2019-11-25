@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Filter__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF($Profile.Name &lt;&gt; &#39;R7 Customer Community Login&#39;,true,IF(OR( AND(ReassigntoSupport__c = false ,NOT(CONTAINS($Label.CSRCaseOrigin,Text(Origin)))),ReassigntoSupport__c = true),true,false))</formula>
+    <label>Case Filter</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

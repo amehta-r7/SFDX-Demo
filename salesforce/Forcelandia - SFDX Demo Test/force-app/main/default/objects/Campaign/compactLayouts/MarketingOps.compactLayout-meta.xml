@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MarketingOps</fullName>
+    <fields>Name</fields>
+    <fields>AssetName__c</fields>
+    <fields>Type</fields>
+    <fields>ProductFamily__c</fields>
+    <fields>FunnelStage__c</fields>
+    <fields>CampaignMessage__c</fields>
+    <fields>AudienceSegment__c</fields>
+    <label>Marketing Ops</label>
+</CompactLayout>

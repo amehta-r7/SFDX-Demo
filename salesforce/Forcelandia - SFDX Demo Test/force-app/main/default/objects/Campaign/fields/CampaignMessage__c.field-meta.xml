@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CampaignMessage__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The content theme or messaging this campaign aligns to</inlineHelpText>
+    <label>Campaign Message</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Effectiveness - Time to Value</fullName>
+                <default>false</default>
+                <label>Effectiveness - Time to Value</label>
+            </value>
+            <value>
+                <fullName>Effectiveness - Risk</fullName>
+                <default>false</default>
+                <label>Effectiveness - Risk</label>
+            </value>
+            <value>
+                <fullName>Effectiveness - Displacement</fullName>
+                <default>false</default>
+                <label>Effectiveness - Displacement</label>
+            </value>
+            <value>
+                <fullName>Effectiveness - Other</fullName>
+                <default>false</default>
+                <label>Effectiveness - Other</label>
+            </value>
+            <value>
+                <fullName>Cloud - Getting Started</fullName>
+                <default>false</default>
+                <label>Cloud - Getting Started</label>
+            </value>
+            <value>
+                <fullName>Cloud - Cloud Proofing</fullName>
+                <default>false</default>
+                <label>Cloud - Cloud Proofing</label>
+            </value>
+            <value>
+                <fullName>Cloud - Other</fullName>
+                <default>false</default>
+                <label>Cloud - Other</label>
+            </value>
+            <value>
+                <fullName>Research - Building Intelligence</fullName>
+                <default>false</default>
+                <label>Research - Building Intelligence</label>
+            </value>
+            <value>
+                <fullName>Research - Other</fullName>
+                <default>false</default>
+                <label>Research - Other</label>
+            </value>
+            <value>
+                <fullName>24x7 SOC-as-a-Service</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>24x7 SOC-as-a-Service</label>
+            </value>
+            <value>
+                <fullName>Build holistic VM program</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Build holistic VM program</label>
+            </value>
+            <value>
+                <fullName>Collaborate on Risk</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Collaborate on Risk</label>
+            </value>
+            <value>
+                <fullName>Cross-Sell - Install Base</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cross-Sell - Install Base</label>
+            </value>
+            <value>
+                <fullName>Detections/MITRE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Detections/MITRE</label>
+            </value>
+            <value>
+                <fullName>Displacement - LogRythym</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Displacement - LogRythym</label>
+            </value>
+            <value>
+                <fullName>Displacement - Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Displacement - Other</label>
+            </value>
+            <value>
+                <fullName>Displacement - Qualys</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Displacement - Qualys</label>
+            </value>
+            <value>
+                <fullName>Displacement - Splunk</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Displacement - Splunk</label>
+            </value>
+            <value>
+                <fullName>Displacement - Tenable</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Displacement - Tenable</label>
+            </value>
+            <value>
+                <fullName>Improve Maturity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Improve Maturity</label>
+            </value>
+            <value>
+                <fullName>MDR Basics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MDR Basics</label>
+            </value>
+            <value>
+                <fullName>Managed DAST</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Managed DAST</label>
+            </value>
+            <value>
+                <fullName>Modern Coverage/Cloud</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Modern Coverage/Cloud</label>
+            </value>
+            <value>
+                <fullName>Productivity/Automation/SIEM + SOAR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Productivity/Automation/SIEM + SOAR</label>
+            </value>
+            <value>
+                <fullName>Promote Efficiency</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Promote Efficiency</label>
+            </value>
+            <value>
+                <fullName>Reduce Risk</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reduce Risk</label>
+            </value>
+            <value>
+                <fullName>Time To Value</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Time To Value</label>
+            </value>
+            <value>
+                <fullName>Total Risk Coverage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Total Risk Coverage</label>
+            </value>
+            <value>
+                <fullName>Understand Risk</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Understand Risk</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

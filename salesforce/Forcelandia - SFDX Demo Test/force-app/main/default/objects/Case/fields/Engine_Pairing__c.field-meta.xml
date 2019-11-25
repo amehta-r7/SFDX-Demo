@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Engine_Pairing__c</fullName>
+    <externalId>false</externalId>
+    <label>Engine Pairing</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Fulfillments__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Distributed</fullName>
+                <default>false</default>
+                <label>Distributed</label>
+            </value>
+            <value>
+                <fullName>Hosted</fullName>
+                <default>false</default>
+                <label>Hosted</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Configuration</controllingFieldValue>
+            <valueName>Distributed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Configuration</controllingFieldValue>
+            <valueName>Hosted</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

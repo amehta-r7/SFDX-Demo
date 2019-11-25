@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Author__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>The name of the person who authored or contributed to the content</inlineHelpText>
+    <label>Author</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Authors</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

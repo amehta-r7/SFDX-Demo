@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>infer3__Score_Snapshot__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A saved copy of the score, if the &quot;Update Account with Score Update&quot; option is enabled. This field is only intended for custom triggers or third-party systems that can&#39;t track formula fields.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A saved copy of the score, if the &quot;Update Account with Score Update&quot; option is enabled. This field is only intended for custom triggers or third-party systems that can&#39;t track formula fields.</inlineHelpText>
+    <label>Infer Score Snapshot NOT FOR LAYOUT</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

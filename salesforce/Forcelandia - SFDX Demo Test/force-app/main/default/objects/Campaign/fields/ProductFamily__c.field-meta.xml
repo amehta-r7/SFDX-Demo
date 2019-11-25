@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductFamily__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Family</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All Products</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>All Products</label>
+            </value>
+            <value>
+                <fullName>Analytic Response</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Analytic Response</label>
+            </value>
+            <value>
+                <fullName>AppSpider</fullName>
+                <default>false</default>
+                <label>AppSpider</label>
+            </value>
+            <value>
+                <fullName>Incident Detection and Response</fullName>
+                <default>false</default>
+                <label>Incident Detection and Response</label>
+            </value>
+            <value>
+                <fullName>Incident Response Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Incident Response Services</label>
+            </value>
+            <value>
+                <fullName>InsightAppSec</fullName>
+                <default>false</default>
+                <label>InsightAppSec</label>
+            </value>
+            <value>
+                <fullName>InsightIDR</fullName>
+                <default>false</default>
+                <label>InsightIDR</label>
+            </value>
+            <value>
+                <fullName>InsightOps</fullName>
+                <default>false</default>
+                <label>InsightOps</label>
+            </value>
+            <value>
+                <fullName>InsightPhish</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>InsightPhishing</label>
+            </value>
+            <value>
+                <fullName>Insight Platform</fullName>
+                <default>false</default>
+                <label>Insight Platform</label>
+            </value>
+            <value>
+                <fullName>InsightUBA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>InsightUBA</label>
+            </value>
+            <value>
+                <fullName>InsightVM</fullName>
+                <default>false</default>
+                <label>InsightVM</label>
+            </value>
+            <value>
+                <fullName>Komand</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Komand</label>
+            </value>
+            <value>
+                <fullName>LogEntries</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LogEntries</label>
+            </value>
+            <value>
+                <fullName>Managed Service</fullName>
+                <default>false</default>
+                <label>Managed Service</label>
+            </value>
+            <value>
+                <fullName>Metasploit</fullName>
+                <default>false</default>
+                <label>Metasploit</label>
+            </value>
+            <value>
+                <fullName>Nexpose</fullName>
+                <default>false</default>
+                <label>Nexpose</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Strategic Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Strategic Services</label>
+            </value>
+            <value>
+                <fullName>Threat Exposure Management</fullName>
+                <default>false</default>
+                <label>Threat Exposure Management</label>
+            </value>
+            <value>
+                <fullName>InsightConnect</fullName>
+                <default>false</default>
+                <label>InsightConnect</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

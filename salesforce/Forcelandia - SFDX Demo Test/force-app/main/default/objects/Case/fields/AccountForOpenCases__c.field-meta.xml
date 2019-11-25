@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountForOpenCases__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This Account field is used to display Only open cases related list on Account layout. 
+This field value is filled with &quot;Account&quot;  using workflow field update</description>
+    <externalId>false</externalId>
+    <label>Account For Open Cases</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Open Cases</relationshipLabel>
+    <relationshipName>OpenCases</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

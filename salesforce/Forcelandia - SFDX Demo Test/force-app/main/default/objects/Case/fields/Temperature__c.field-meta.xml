@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Temperature__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( CustomerEscalationTemperature__c = &#39;COLD&#39;, IMAGE(&#39;/resource/CustomerEscalationCOLD&#39;, &quot;COLD&quot;, 25, 40), if( CustomerEscalationTemperature__c = &#39;HOT&#39;, IMAGE(&#39;/resource/CustomerEscalationHOT&#39;, &quot;HOT&quot;, 25, 40),if( CustomerEscalationTemperature__c = &#39;WARM&#39;, IMAGE(&#39;/resource/CustomerEscalationWARM&#39;, &quot;WARM&quot;, 25, 40),null)))</formula>
+    <label>Temperature</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

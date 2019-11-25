@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>infer3__behavioral_evaluation_score__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The score of the Account at the time the last Opportunity was created, or if no opportunities were created, the current behavior score.</description>
+    <externalId>false</externalId>
+    <label>Infer: Behavioral Evaluation Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

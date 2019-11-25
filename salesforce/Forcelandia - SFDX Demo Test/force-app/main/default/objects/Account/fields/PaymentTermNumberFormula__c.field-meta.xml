@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentTermNumberFormula__c</fullName>
+    <description>Converts the Payment Term to a number for use on quote and approvals</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(PaymentTerms__c, &quot;&quot;), NULL,
+IF(ISPICKVAL(PaymentTerms__c , &quot;Net 0&quot;), 0,
+IF(ISPICKVAL(PaymentTerms__c , &quot;Net 7&quot;), 7,
+IF(ISPICKVAL(PaymentTerms__c , &quot;Net 10&quot;), 10,
+IF(ISPICKVAL(PaymentTerms__c , &quot;Net 15&quot;), 15,
+IF(ISPICKVAL(PaymentTerms__c , &quot;Net 30&quot;), 30,
+IF(ISPICKVAL(PaymentTerms__c , &quot;Net 45&quot;), 45,
+IF(ISPICKVAL(PaymentTerms__c , &quot;Net 55&quot;), 55,
+IF(ISPICKVAL(PaymentTerms__c , &quot;Net 60&quot;), 60,
+IF(ISPICKVAL(PaymentTerms__c , &quot;Net 75&quot;), 75,
+IF(ISPICKVAL(PaymentTerms__c , &quot;Net 90&quot;), 90,
+IF(ISPICKVAL(PaymentTerms__c , &quot;Prepaid&quot;), 100, 0
+))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PaymentTermNumberFormula</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

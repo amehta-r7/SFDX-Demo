@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductFamily__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Family</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AppSpider</fullName>
+                <default>false</default>
+                <label>AppSpider</label>
+            </value>
+            <value>
+                <fullName>Insight</fullName>
+                <default>false</default>
+                <label>Insight</label>
+            </value>
+            <value>
+                <fullName>Komand</fullName>
+                <default>false</default>
+                <label>Komand</label>
+            </value>
+            <value>
+                <fullName>LANGuardian</fullName>
+                <default>false</default>
+                <label>LANGuardian</label>
+            </value>
+            <value>
+                <fullName>Log Entries</fullName>
+                <default>false</default>
+                <label>Log Entries</label>
+            </value>
+            <value>
+                <fullName>Managed Application Security (MAS)</fullName>
+                <default>false</default>
+                <label>Managed Application Security (MAS)</label>
+            </value>
+            <value>
+                <fullName>Managed Detection Response (MDR)</fullName>
+                <default>false</default>
+                <label>Managed Detection Response (MDR)</label>
+            </value>
+            <value>
+                <fullName>Managed Vulnerability Management (MVM)</fullName>
+                <default>false</default>
+                <label>Managed Vulnerability Management (MVM)</label>
+            </value>
+            <value>
+                <fullName>Metasploit</fullName>
+                <default>false</default>
+                <label>Metasploit</label>
+            </value>
+            <value>
+                <fullName>Nexpose</fullName>
+                <default>false</default>
+                <label>Nexpose</label>
+            </value>
+            <value>
+                <fullName>PSS</fullName>
+                <default>false</default>
+                <label>PSS</label>
+            </value>
+            <value>
+                <fullName>ControlsInsight</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ControlsInsight</label>
+            </value>
+            <value>
+                <fullName>Default Self Service</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Default Self Service</label>
+            </value>
+            <value>
+                <fullName>InsightVM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>InsightVM</label>
+            </value>
+            <value>
+                <fullName>Mobilisafe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mobilisafe</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>tCell</fullName>
+                <default>false</default>
+                <isActive>true</isActive>
+                <label>tCell</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

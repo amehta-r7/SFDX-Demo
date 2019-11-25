@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseDateDayOfWeekLocal__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*IF 
+( 
+VALUE ( MID ( TEXT ( TEST_Date_Time__c), 12, 2)) &lt; 5, 
+CASE(MOD( DATEVALUE(TEST_Date_Time__c) - DATE (2000 ,1, 1) ,7), 6, &quot;Saturday&quot;, 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3, &quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot; , &quot;ERROR&quot;), 
+CASE(MOD( DATEVALUE(TEST_Date_Time__c) - DATE (2000 ,1, 1) ,7), 0, &quot;Saturday&quot;, 1, &quot;Sunday&quot;, 2, &quot;Monday&quot;, 3, &quot;Tuesday&quot;, 4, &quot;Wednesday&quot;, 5, &quot;Thursday&quot;, 6, &quot;Friday&quot; , &quot;ERROR&quot;) 
+)*/ 
+
+
+CASE(MOD( DATEVALUE( CreatedDate ) - DATE (2000 ,1, 1) ,7), 0, &quot;Saturday&quot;, 1, &quot;Sunday&quot;, 2, &quot;Monday&quot;, 3, &quot;Tuesday&quot;, 4, &quot;Wednesday&quot;, 5, &quot;Thursday&quot;, 6, &quot;Friday&quot; , &quot;ERROR&quot;)</formula>
+    <label>Case Date Day of Week (local)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

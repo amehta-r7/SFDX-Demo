@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>infer3__Infer_Score__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>VALUE(TRIM(SUBSTITUTE(MID(CASE(FLOOR(infer3__Score_Index__c/85),0,infer3__Score_Object_ID__r.infer3__Score_0__c,1,infer3__Score_Object_ID__r.infer3__Score_1__c,2,infer3__Score_Object_ID__r.infer3__Score_2__c,3,infer3__Score_Object_ID__r.infer3__Score_3__c,4,infer3__Score_Object_ID__r.infer3__Score_4__c,5,infer3__Score_Object_ID__r.infer3__Score_5__c,6,infer3__Score_Object_ID__r.infer3__Score_6__c,7,infer3__Score_Object_ID__r.infer3__Score_7__c,8,infer3__Score_Object_ID__r.infer3__Score_8__c,9,infer3__Score_Object_ID__r.infer3__Score_9__c,10,infer3__Score_Object_ID__r.infer3__Score_10__c,11,infer3__Score_Object_ID__r.infer3__Score_11__c,12,infer3__Score_Object_ID__r.infer3__Score_12__c,13,infer3__Score_Object_ID__r.infer3__Score_13__c,14,infer3__Score_Object_ID__r.infer3__Score_14__c,15,infer3__Score_Object_ID__r.infer3__Score_15__c,16,infer3__Score_Object_ID__r.infer3__Score_16__c,17,infer3__Score_Object_ID__r.infer3__Score_17__c,18,infer3__Score_Object_ID__r.infer3__Score_18__c,null),1+3*MOD(infer3__Score_Index__c,85),3),&#39;^&#39;,&#39; &#39;)))</formula>
+    <label>Infer: Fit Score [0-100]</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

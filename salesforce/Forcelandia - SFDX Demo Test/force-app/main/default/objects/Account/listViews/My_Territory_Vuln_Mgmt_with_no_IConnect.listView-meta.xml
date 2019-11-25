@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Territory_Vuln_Mgmt_with_no_IConnect</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>TEMAE__c</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE_CODE</columns>
+    <columns>ACCOUNT.EMPLOYEES</columns>
+    <columns>OpenOpportunities__c</columns>
+    <columns>ProductActive__c</columns>
+    <filterScope>Team</filterScope>
+    <filters>
+        <field>ProductActive__c</field>
+        <operation>contains</operation>
+        <value>nexpose,insightvm</value>
+    </filters>
+    <filters>
+        <field>ProductActive__c</field>
+        <operation>notContain</operation>
+        <value>komand,insightconnect</value>
+    </filters>
+    <label>My Territory: Vuln Mgmt with no IConnect</label>
+    <sharedTo>
+        <role>InsightConnectSales</role>
+        <role>InsightConnectSalesReps</role>
+    </sharedTo>
+</ListView>

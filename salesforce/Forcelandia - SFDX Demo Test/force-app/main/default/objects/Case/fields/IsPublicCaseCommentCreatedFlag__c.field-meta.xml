@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPublicCaseCommentCreatedFlag__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This Checkbox is used to check when the Case Comment with Public checkbox enabled to True, to send the notification to Contact</description>
+    <externalId>false</externalId>
+    <label>Is Public Case Comment Created Flag</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

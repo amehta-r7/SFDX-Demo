@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard Support Process</fullName>
+    <description>Standard process to be used by users of the portal</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Closed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Enhancement Request Filed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>In Engineering Backlog</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - No Response</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Open</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Re-Opened</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Session Scheduled</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Solution Offered</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Spam or Duplicate</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Waiting on Customer</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAccounts</fullName>
+    <columns>CaseSafeID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Status__c</columns>
+    <columns>TeamTerritoryGroup__c</columns>
+    <columns>Rapid7Industry__c</columns>
+    <columns>ACCOUNT.SALES</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>OpenOpportunities__c</columns>
+    <columns>TEMAE__c</columns>
+    <columns>IDRAE__c</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>IN</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>contains</operation>
+        <value>credit union,credit unions</value>
+    </filters>
+    <label>All Accounts</label>
+</ListView>

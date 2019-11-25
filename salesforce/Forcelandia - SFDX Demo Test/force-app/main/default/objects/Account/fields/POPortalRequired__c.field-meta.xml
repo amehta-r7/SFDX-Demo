@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POPortalRequired__c</fullName>
+    <description>This field will help sales know when a customer or partner requires a PO</description>
+    <externalId>false</externalId>
+    <label>PO/Portal Required</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PO Required</fullName>
+                <default>false</default>
+                <label>PO Required</label>
+            </value>
+            <value>
+                <fullName>Portal Required</fullName>
+                <default>false</default>
+                <label>Portal Required</label>
+            </value>
+            <value>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+                <label>Not Required</label>
+            </value>
+            <value>
+                <fullName>Amount Dependent</fullName>
+                <default>false</default>
+                <label>Amount Dependent</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>-</fullName>
+                <default>false</default>
+                <label>-</label>
+            </value>
+            <value>
+                <fullName>Blank</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Blank</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

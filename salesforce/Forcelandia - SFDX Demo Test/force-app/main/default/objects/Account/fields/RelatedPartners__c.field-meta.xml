@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelatedPartners__c</fullName>
+    <description>Links to an Opportunity with Partners custom report as an alternative to showing the Partners related list on Customer accounts (the Partners related list on Account shows all Partners associated with opportunities for the account, making the list meaningless)</description>
+    <externalId>false</externalId>
+    <formula>IF(
+$User.UIThemeDisplayed=&quot;Theme4d&quot;,
+(HYPERLINK($Setup.EnvironmentSetting__c.LightningBaseURL__c &amp; &quot;one/one.app#/sObject/&quot;&amp;  $Setup.EnvironmentSetting__c.ClosedWonOppsandPrimaryPartnersId__c &amp;&quot;/view?fv0= &quot;&amp; Id&amp;&quot;&quot;,&quot;View Partner List&quot;)),
+(HYPERLINK(&quot;/&quot;&amp;  $Setup.EnvironmentSetting__c.ClosedWonOppsandPrimaryPartnersId__c &amp;&quot;?pv0=&quot;&amp;Id&amp;&quot;&quot;,&quot;View Partner List&quot;))
+)</formula>
+    <inlineHelpText>Click the link to view a report of all partners with closed won opportunities for this account</inlineHelpText>
+    <label>Related Partners</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

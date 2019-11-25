@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TimeZone__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the timezone you would like to receive support in and receive update cadence within these business hours</inlineHelpText>
+    <label>Timezone to Receive Support</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(GMT+10:00) Australian Eastern Standard Time (Australia/Brisbane)</fullName>
+                <default>false</default>
+                <label>(GMT+10:00) Australian Eastern Standard Time (Australia/Brisbane)</label>
+            </value>
+            <value>
+                <fullName>(GMT+08:00) Singapore Standard Time (Asia/Singapore)</fullName>
+                <default>false</default>
+                <label>(GMT+08:00) Singapore Standard Time (Asia/Singapore)</label>
+            </value>
+            <value>
+                <fullName>(GMT+01:00) British Summer Time (Europe/London)</fullName>
+                <default>false</default>
+                <label>(GMT+01:00) British Summer Time (Europe/London)</label>
+            </value>
+            <value>
+                <fullName>(GMT-04:00) Eastern Daylight Time (America/New_York)</fullName>
+                <default>false</default>
+                <label>(GMT-04:00) Eastern Daylight Time (America/New_York)</label>
+            </value>
+            <value>
+                <fullName>(GMT-05:00) Central Daylight Time (America/Mexico_City)</fullName>
+                <default>false</default>
+                <label>(GMT-05:00) Central Daylight Time (America/Mexico_City)</label>
+            </value>
+            <value>
+                <fullName>(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)</fullName>
+                <default>false</default>
+                <label>(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

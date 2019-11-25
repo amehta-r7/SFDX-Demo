@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Publicity_Rights_Prohibited_Update</fullName>
+    <active>true</active>
+    <description>As a sales user, I cannot un check an already checked &quot;Publicity Rights Prohibited&quot; checkbox.</description>
+    <errorConditionFormula>AND( 
+$Profile.Name == &#39;R7 Sales Profile&#39;, 
+ISCHANGED(PublicityRightsProhibited__c), 
+NOT(PublicityRightsProhibited__c), 
+PRIORVALUE(PublicityRightsProhibited__c) 
+)</errorConditionFormula>
+    <errorMessage>You can not uncheck an already checked &quot;Publicity Rights Prohibited&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDR_Foundational_Sources__c</fullName>
+    <externalId>false</externalId>
+    <label>IDR Foundational Sources</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All Confirmed</fullName>
+                <default>false</default>
+                <label>All Confirmed</label>
+            </value>
+            <value>
+                <fullName>No Active Directory</fullName>
+                <default>false</default>
+                <label>No Active Directory</label>
+            </value>
+            <value>
+                <fullName>No LDAP</fullName>
+                <default>false</default>
+                <label>No LDAP</label>
+            </value>
+            <value>
+                <fullName>No DHCP</fullName>
+                <default>false</default>
+                <label>No DHCP</label>
+            </value>
+            <value>
+                <fullName>No DNS</fullName>
+                <default>false</default>
+                <label>No DNS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
